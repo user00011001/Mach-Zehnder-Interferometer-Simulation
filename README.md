@@ -1,8 +1,4 @@
-Sure, here's a README file for the program:
-
----
-
-# Mach-Zehnder Interferometer Simulation
+## Mach-Zehnder Interferometer Simulation
 
 This program simulates the behavior of a quantum optical system, specifically a Mach-Zehnder Interferometer, using the Strawberry Fields quantum computing library.
 
