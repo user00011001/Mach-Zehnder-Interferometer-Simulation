@@ -20,7 +20,7 @@ This Python program simulates a Mach-Zehnder interferometer with two input modes
 
 1. Run the program:
    ```
-   python mach_zehnder_interferometer.py
+   python3 interferometer.py
    ```
 
 2. Follow the prompts to choose the phase settings for each mode and the initial state preparation.
