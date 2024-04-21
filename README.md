@@ -1,7 +1,7 @@
-Mach-Zehnder Interferometer Simulation
+# Mach-Zehnder Interferometer Simulation
 This Python program simulates a Mach-Zehnder interferometer with two input modes and two output modes using the Strawberry Fields library. The user can choose the phase settings for each mode and the initial state preparation.
 
-Requirements
+## Requirements
 Python 3.x
 Strawberry Fields library
 Installation
@@ -17,7 +17,7 @@ Copy code
 python mach_zehnder_interferometer.py
 Follow the prompts to choose the phase settings for each mode and the initial state preparation.
 The program will run the simulation and display the most probable photon number for each output mode.
-Simulation Details
+## Simulation Details
 The Mach-Zehnder interferometer consists of the following components:
 
 Two input modes (Mode 0 and Mode 1)
