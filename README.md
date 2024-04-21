@@ -1,34 +1,26 @@
-## Mach-Zehnder Interferometer Simulation
+Mach-Zehnder Interferometer Simulation
+This Python program simulates a Mach-Zehnder interferometer with two input modes and two output modes using the Strawberry Fields library. The user can choose the phase settings for each mode and the initial state preparation.
 
-This program simulates the behavior of a quantum optical system, specifically a Mach-Zehnder Interferometer, using the Strawberry Fields quantum computing library.
+Requirements
+Python 3.x
+Strawberry Fields library
+Installation
+Install Python 3.x 
+Install the Strawberry Fields library using pip:
 
-## Description
+Copy code
+pip install strawberryfields
+Usage
+Run the program:
 
-The Mach-Zehnder Interferometer is a classic device in quantum optics that demonstrates the principle of quantum interference. This program allows you to explore the effects of various phase settings and input states on the behavior of a Mach-Zehnder Interferometer.
+Copy code
+python mach_zehnder_interferometer.py
+Follow the prompts to choose the phase settings for each mode and the initial state preparation.
+The program will run the simulation and display the most probable photon number for each output mode.
+Simulation Details
+The Mach-Zehnder interferometer consists of the following components:
 
-## Features
-
-* Choose the phase settings for the two phase shifters in the interferometer from a set of common values.
-* Choose the type of input state (either a single photon state or a coherent state).
-* The program will run the quantum simulation and print the most probable photon number for each output mode of the interferometer.
-
-## How to Use
-
-1. Run the program.
-2. Follow the prompts to choose the phase settings for the two phase shifters.
-3. Choose the type of input state (either a single photon state or a coherent state).
-4. The program will display the most probable photon number for each output mode.
-
-## Dependencies
-
-* Python 3
-* Strawberry Fields
-* NumPy
-
-## Installation
-
-You can install Strawberry Fields and NumPy via pip:
-
-```
-pip install strawberryfields numpy
-```
+Two input modes (Mode 0 and Mode 1)
+Two beam splitters (50/50)
+Two phase shifters (configurable phase settings)
+Two output modes (Mode 0 and Mode 1)
