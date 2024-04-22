@@ -2,7 +2,6 @@ import strawberryfields as sf
 from strawberryfields import ops
 from math import pi
 
-# Common phase settings and state preparations
 common_phases = [0, pi/2, pi, 3*pi/2, 2*pi]
 state_preparations = ['Single Photon State', 'Coherent State']
 
@@ -58,7 +57,6 @@ def get_input():
 def main():
     phase1, phase2, state_preparation = get_input()
     
-    # initialize a 2-mode quantum program
     prog = sf.Program(2)
     
     with prog.context as q:
@@ -68,24 +66,18 @@ def main():
         elif state_preparation == 'Coherent State':
             ops.Coherent(1) | q[0]
         
-        # First beam splitter
         ops.BSgate(pi/4, 0) | (q[0], q[1])
         
-        # Phase shifters
         ops.Rgate(phase1) | q[0]
         ops.Rgate(phase2) | q[1]
         
-        # Second beam splitter
         ops.BSgate(pi/4, 0) | (q[0], q[1])
     
-    # initialize a quantum simulator
     eng = sf.Engine('fock', backend_options={"cutoff_dim": 5})
     result = eng.run(prog)
     
-    # get the state of the quantum register
     state = result.state
     
-    # print the most probable photon number for each mode
     print()
     print("Simulation Results:")
     print("Most probable photon number for Mode 0:")
