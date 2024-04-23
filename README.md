@@ -24,7 +24,7 @@ This Python script simulates quantum interference using the Strawberry Fields li
 
 3. Run the script using the following command:
    ```
-   python quantum_interference.py
+   python3 interference.py
    ```
 
 4. Follow the on-screen prompts to select the phase settings and displacement amplitudes for each mode:
