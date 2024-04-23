@@ -1,6 +1,6 @@
-# Mach-Zehnder Interferometer Simulation
+# Quantum Interference Simulation
 
-This Python program simulates a Mach-Zehnder interferometer with two input modes and two output modes using the Strawberry Fields library. The user can choose the phase settings for each mode and the initial state preparation.
+This Python script simulates quantum interference using the Strawberry Fields library. It allows users to explore the effects of different phase settings and displacement amplitudes on the photon number distribution in a two-mode quantum system.
 
 ## Requirements
 
@@ -9,29 +9,33 @@ This Python program simulates a Mach-Zehnder interferometer with two input modes
 
 ## Installation
 
-1. Install Python 3.x
+1. Ensure that you have Python 3.x installed on your system.
 
-2. Install the Strawberry Fields library using pip:
+2. Install the Strawberry Fields library by running the following command:
    ```
    pip install strawberryfields
    ```
 
 ## Usage
 
-1. Run the program:
+1. Clone or download the repository to your local machine.
+
+2. Open a terminal or command prompt and navigate to the directory containing the script.
+
+3. Run the script using the following command:
    ```
-   python3 interferometer.py
+   python quantum_interference.py
    ```
 
-2. Follow the prompts to choose the phase settings for each mode and the initial state preparation.
+4. Follow the on-screen prompts to select the phase settings and displacement amplitudes for each mode:
+   - Choose the phase setting for mode 0 from the provided options (in radians).
+   - Choose the phase setting for mode 1 from the provided options (in radians).
+   - Choose the displacement amplitude for mode 0 from the provided options.
+   - Choose the displacement amplitude for mode 1 from the provided options.
 
-3. The program will run the simulation and display the most probable photon number for each output mode.
+5. The script will run the quantum interference simulation using the selected parameters and display the measurement results.
 
-## Simulation Details
+6. The measurement results show the photon number distribution for each mode after the simulation, indicating the number of shots where specific numbers of photons were measured.
 
-The Mach-Zehnder interferometer consists of the following components:
 
-- Two input modes (Mode 0 and Mode 1)
-- Two beam splitters (50/50)
-- Two phase shifters (configurable phase settings)
-- Two output modes (Mode 0 and Mode 1)
+- The photon number distribution results provide insights into the quantum interference effects based on the chosen phase settings and displacement amplitudes.
